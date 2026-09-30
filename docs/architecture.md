@@ -5,16 +5,17 @@ nav_order: 3
 ---
 
 # Architecture
-{: .no_toc }
+
+[Documentation home](index.md)
 
 A deep dive into the three-tier system design, transaction flows, and security model.
-{: .fs-6 .fw-300 }
 
-## Table of contents
-{: .no_toc .text-delta }
+## On this page
 
-1. TOC
-{:toc}
+- [System Overview](#system-overview)
+- [Transaction Lifecycle](#transaction-lifecycle)
+- [Signature Architecture](#signature-architecture)
+- [Security Model](#security-model)
 
 ---
 

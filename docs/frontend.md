@@ -5,16 +5,18 @@ nav_order: 7
 ---
 
 # Frontend Guide
-{: .no_toc }
+
+[Documentation home](index.md)
 
 The Next.js 14 web interface for transaction submission, queue management, and policy administration.
-{: .fs-6 .fw-300 }
 
-## Table of contents
-{: .no_toc .text-delta }
+## On this page
 
-1. TOC
-{:toc}
+- [Overview](#overview)
+- [Setup](#setup)
+- [Pages](#pages)
+- [API Client](#api-client)
+- [Contract ABI](#contract-abi)
 
 ---
 

@@ -5,16 +5,18 @@ nav_order: 6
 ---
 
 # API Reference
-{: .no_toc }
+
+[Documentation home](index.md)
 
 Complete endpoint documentation for the FastAPI backend.
-{: .fs-6 .fw-300 }
 
-## Table of contents
-{: .no_toc .text-delta }
+## On this page
 
-1. TOC
-{:toc}
+- [Base URL](#base-url)
+- [Core Endpoints](#core-endpoints)
+- [Admin Endpoints](#admin-endpoints)
+- [Error Responses](#error-responses)
+- [CORS](#cors)
 
 ---
 

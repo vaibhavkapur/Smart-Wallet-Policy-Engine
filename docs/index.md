@@ -1,25 +1,33 @@
 ---
 title: Home
-layout: home
+layout: default
 nav_order: 1
 ---
 
 # Smart Contract Wallet + Policy Engine
-{: .fs-9 }
 
-A smart contract wallet with a risk-based policy engine that simulates transactions, scores risk across six dimensions, and enforces tiered authorization on-chain via EIP-712 signed attestations.
-{: .fs-6 .fw-300 }
+A smart contract wallet with a risk-based policy engine that evaluates transactions and enforces tiered authorization on-chain through EIP-712 signed attestations.
 
-[Get Started](/smart-wallet-policy-engine/getting-started){: .btn .btn-primary .fs-5 .mb-4 .mb-md-0 .mr-2 }
-[API Reference](/smart-wallet-policy-engine/api-reference){: .btn .fs-5 .mb-4 .mb-md-0 }
+[Get Started](getting-started.md) · [API Reference](api-reference.md) · [Repository README](https://github.com/vaibhavkapur/smart-wallet-policy-engine/blob/main/README.md)
 
----
+## Documentation
+
+- [Getting Started](getting-started.md)
+- [Architecture](architecture.md)
+- [API Reference](api-reference.md)
+- [Testing Guide](testing.md)
+- [Deployment Guide](deployment.md)
+- [Smart Contract Reference](smart-contract.md)
+- [Risk Engine](risk-engine.md)
+- [Frontend Guide](frontend.md)
+- [Security Model](security.md)
+- [Environment Configuration](deployment.md#environment-configuration)
 
 ## Overview
 
-The Smart Contract Wallet + Policy Engine is a three-tier authorization system that sits between a user and their on-chain assets. Every outbound transaction is simulated off-chain, assigned a risk score between 0.0 and 1.0, and routed through one of four enforcement paths before execution. The smart contract verifies cryptographic attestations from the backend before releasing funds, ensuring that no transaction bypasses the policy layer.
+The Smart Contract Wallet + Policy Engine is an authorization system with four decision outcomes that sits between a user and their on-chain assets. Every outbound transaction is simulated off-chain, assigned a risk score between 0.0 and 1.0, and routed through one of four enforcement paths before execution. The smart contract verifies cryptographic attestations from the backend before releasing funds, ensuring that no transaction bypasses the policy layer.
 
-### Key Features
+## Key Features
 
 - **Four-tier authorization** -- Transactions are classified as ALLOW (immediate), REQUIRE_SECOND_SIGNATURE (guardian co-sign), REQUIRE_DELAY (1-hour timelock queue), or DENY (blocked)
 - **Six-rule risk scoring** -- Independent rules evaluate value, recipient reputation, approval patterns, contract trust status, simulation outcomes, and token transfer size
@@ -30,7 +38,7 @@ The Smart Contract Wallet + Policy Engine is a three-tier authorization system t
 - **Complete audit trail** -- Every policy decision is logged with timestamp, risk score, decision, and reason codes for compliance and forensic analysis
 - **Emergency pause** -- The owner can instantly freeze all wallet operations via OpenZeppelin's Pausable mechanism
 
-### Architecture at a Glance
+## Architecture at a Glance
 
 ```
 User Browser (Next.js)
@@ -55,7 +63,9 @@ Simulate   Score    Decide
  (exec)  (co-sign)  (queue)  (revert)
 ```
 
-### Tech Stack
+## Tech Stack and Scope
+
+Solidity / Foundry, a Python / FastAPI backend, and a Next.js frontend. The MVP simulator decodes calldata locally rather than running a fork-based simulation. Wallet execution requires a deployed contract and matching RPC, chain, and signing configuration; see the deployment and security guides for the implementation's limits.
 
 | Component | Technology |
 |:----------|:-----------|
@@ -65,7 +75,7 @@ Simulate   Score    Decide
 | Testing | Forge (30+ Solidity tests), pytest (backend unit tests) |
 | CI | GitHub Actions (forge fmt, build, test) |
 
-### Project Structure
+## Project Structure
 
 ```
 src/
@@ -96,3 +106,13 @@ frontend/
     api.ts                     # Typed API client for all endpoints
     abi.ts                     # Smart contract ABI definitions
 ```
+
+## Related projects
+
+These are independent companion repositories. The links describe related work, not implemented runtime integrations:
+
+- [Agent Authorization Wallet + Merchant Trust Gateway](https://github.com/vaibhavkapur/Agent-Authorization-Wallet-Merchant-Trust-Gateway): purchase authorization, merchant verification, and execution evidence.
+- [Agent Services Marketplace](https://github.com/vaibhavkapur/Agent-Services-Marketplace): service discovery, quotes, and agent purchase workflows.
+- [Agentic Commerce Protocol Test Lab](https://github.com/vaibhavkapur/Agentic-Commerce-Protocol-Test-Lab): protocol fixtures, scenarios, and conformance checks.
+- [Autonomous Price Watch Buyer](https://github.com/vaibhavkapur/Autonomous-Price-Watch-Buyer): price monitoring and bounded purchase decisions.
+- [Cross-Merchant Procurement Agent](https://github.com/vaibhavkapur/Cross-Merchant-Procurement-Agent): merchant comparison and procurement planning.

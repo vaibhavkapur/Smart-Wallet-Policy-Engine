@@ -5,16 +5,22 @@ nav_order: 2
 ---
 
 # Getting Started
-{: .no_toc }
+
+[Documentation home](index.md)
 
 Set up and run the Smart Contract Wallet + Policy Engine locally.
-{: .fs-6 .fw-300 }
 
-## Table of contents
-{: .no_toc .text-delta }
+## On this page
 
-1. TOC
-{:toc}
+- [Prerequisites](#prerequisites)
+- [Clone the Repository](#clone-the-repository)
+- [Configure Environment](#configure-environment)
+- [Build and Test the Smart Contract](#build-and-test-the-smart-contract)
+- [Deploy the Smart Contract](#deploy-the-smart-contract)
+- [Start the Backend](#start-the-backend)
+- [Start the Frontend](#start-the-frontend)
+- [Make Your First Policy Decision](#make-your-first-policy-decision)
+- [What's Next](#whats-next)
 
 ---
 
@@ -28,7 +34,7 @@ Set up and run the Smart Contract Wallet + Policy Engine locally.
 ## Clone the Repository
 
 ```bash
-git clone --recurse-submodules https://github.com/vaibhavkapur22/smart-wallet-policy-engine.git
+git clone --recurse-submodules https://github.com/vaibhavkapur/smart-wallet-policy-engine.git
 cd smart-wallet-policy-engine
 ```
 
@@ -63,7 +69,7 @@ RPC_URL=https://rpc.sepolia.org
 CHAIN_ID=11155111
 ```
 
-See the [Configuration](/smart-wallet-policy-engine/deployment#environment-configuration) section for all available variables.
+See the [Configuration](deployment.md#environment-configuration) section for all available variables.
 
 ## Build and Test the Smart Contract
 
@@ -199,8 +205,8 @@ Re-evaluating the same transaction now returns `ALLOW` because the new-recipient
 
 ## What's Next
 
-- [Architecture](/smart-wallet-policy-engine/architecture) -- Understand the three-tier design and transaction flows
-- [Risk Engine](/smart-wallet-policy-engine/risk-engine) -- How the six scoring rules work
-- [API Reference](/smart-wallet-policy-engine/api-reference) -- Full endpoint documentation
-- [Smart Contract](/smart-wallet-policy-engine/smart-contract) -- Contract function reference
-- [Deployment](/smart-wallet-policy-engine/deployment) -- Production deployment guide
+- [Architecture](architecture.md) -- Understand the three-tier design and transaction flows
+- [Risk Engine](risk-engine.md) -- How the six scoring rules work
+- [API Reference](api-reference.md) -- Full endpoint documentation
+- [Smart Contract](smart-contract.md) -- Contract function reference
+- [Deployment](deployment.md) -- Production deployment guide

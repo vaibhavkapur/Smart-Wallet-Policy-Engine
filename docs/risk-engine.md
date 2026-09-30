@@ -5,16 +5,19 @@ nav_order: 5
 ---
 
 # Risk Engine
-{: .no_toc }
+
+[Documentation home](index.md)
 
 How transactions are simulated, scored across six dimensions, and routed to policy decisions.
-{: .fs-6 .fw-300 }
 
-## Table of contents
-{: .no_toc .text-delta }
+## On this page
 
-1. TOC
-{:toc}
+- [Overview](#overview)
+- [Pipeline](#pipeline)
+- [Stage 1: Transaction Simulator](#stage-1-transaction-simulator)
+- [Stage 2: Risk Scoring](#stage-2-risk-scoring)
+- [Stage 3: Policy Engine](#stage-3-policy-engine)
+- [Example Scoring](#example-scoring)
 
 ---
 

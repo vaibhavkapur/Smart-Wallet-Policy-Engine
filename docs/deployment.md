@@ -5,16 +5,21 @@ nav_order: 8
 ---
 
 # Deployment Guide
-{: .no_toc }
+
+[Documentation home](index.md)
 
 Deploying the smart contract, backend, and frontend to production environments.
-{: .fs-6 .fw-300 }
 
-## Table of contents
-{: .no_toc .text-delta }
+## On this page
 
-1. TOC
-{:toc}
+- [Prerequisites](#prerequisites)
+- [Environment Configuration](#environment-configuration)
+- [Step 1: Deploy Smart Contract](#step-1-deploy-smart-contract)
+- [Step 2: Deploy Backend](#step-2-deploy-backend)
+- [Step 3: Deploy Frontend](#step-3-deploy-frontend)
+- [Production Checklist](#production-checklist)
+- [Scaling Considerations](#scaling-considerations)
+- [Network Support](#network-support)
 
 ---
 

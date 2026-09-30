@@ -1,7 +1,7 @@
 title: Smart Contract Wallet + Policy Engine
 description: A smart contract wallet with a risk-based policy engine that classifies transactions by risk level and enforces appropriate authorization on-chain.
 baseurl: "/smart-wallet-policy-engine"
-url: ""
+url: "https://vaibhavkapur.github.io"
 
 remote_theme: just-the-docs/just-the-docs@v0.10.0
 
@@ -9,7 +9,7 @@ color_scheme: dark
 
 aux_links:
   "GitHub":
-    - "https://github.com/vaibhavkapur22/smart-wallet-policy-engine"
+    - "https://github.com/vaibhavkapur/smart-wallet-policy-engine"
 
 aux_links_new_tab: true
 
@@ -37,6 +37,8 @@ callouts:
     color: red
 
 plugins:
+  - jekyll-remote-theme
+  - jekyll-relative-links
   - jekyll-seo-tag
 
 exclude:

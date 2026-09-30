@@ -5,16 +5,17 @@ nav_order: 10
 ---
 
 # Testing Guide
-{: .no_toc }
+
+[Documentation home](index.md)
 
 How to run the test suites and what they cover.
-{: .fs-6 .fw-300 }
 
-## Table of contents
-{: .no_toc .text-delta }
+## On this page
 
-1. TOC
-{:toc}
+- [Overview](#overview)
+- [Smart Contract Tests](#smart-contract-tests)
+- [Backend Tests](#backend-tests)
+- [CI Pipeline](#ci-pipeline)
 
 ---
 

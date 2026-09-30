@@ -5,16 +5,21 @@ nav_order: 4
 ---
 
 # Smart Contract Reference
-{: .no_toc }
+
+[Documentation home](index.md)
 
 Complete reference for the PolicySmartWallet Solidity contract.
-{: .fs-6 .fw-300 }
 
-## Table of contents
-{: .no_toc .text-delta }
+## On this page
 
-1. TOC
-{:toc}
+- [Overview](#overview)
+- [Types](#types)
+- [State Variables](#state-variables)
+- [Core Functions](#core-functions)
+- [Admin Functions](#admin-functions)
+- [Events](#events)
+- [EIP-712 Details](#eip-712-details)
+- [Deployment](#deployment)
 
 ---
 

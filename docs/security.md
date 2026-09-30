@@ -5,16 +5,19 @@ nav_order: 9
 ---
 
 # Security Model
-{: .no_toc }
+
+[Documentation home](index.md)
 
 Trust assumptions, threat scenarios, and defense-in-depth layers.
-{: .fs-6 .fw-300 }
 
-## Table of contents
-{: .no_toc .text-delta }
+## On this page
 
-1. TOC
-{:toc}
+- [Trust Model](#trust-model)
+- [On-Chain Defenses](#on-chain-defenses)
+- [Off-Chain Defenses](#off-chain-defenses)
+- [Threat Scenarios](#threat-scenarios)
+- [Audit Status](#audit-status)
+- [Best Practices](#best-practices)
 
 ---
 
@@ -160,7 +163,6 @@ Every policy decision is logged to the database with full context:
 
 ## Audit Status
 
-{: .warning }
 > This contract has not been formally audited. It is designed for testnet and educational use. A professional security audit is recommended before any mainnet deployment with real funds.
 
 ## Best Practices
